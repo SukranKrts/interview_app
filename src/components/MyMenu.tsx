@@ -3,6 +3,7 @@ import { Button } from '@mui/material';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import React from 'react';
+import MyDialog from './MyDialog';
 
 function MyMenu() {
     const {logout} = useAuth0();
@@ -42,8 +43,8 @@ function MyMenu() {
           horizontal: 'left',
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Logout</MenuItem>
+        <MyDialog/>
+        <MenuItem onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })} style={{fontSize: 14, textAlign: 'left'}}>LOGOUT</MenuItem>
       </Menu>
     </div>
   );
