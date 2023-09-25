@@ -79,11 +79,6 @@ function MyDialog() {
                         variant="standard"
                     /></div>
                 </DialogContent>
-                <DialogActions>
-                    <Button autoFocus onClick={handleClose}>
-                        Save changes
-                    </Button>
-                </DialogActions>
             </BootstrapDialog>
         </div>
     );
