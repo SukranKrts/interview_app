@@ -63,12 +63,7 @@ function HomePage() {
                     </Box>
                 </div>
                 <div style={{ float: 'right', marginRight: '20px', marginTop: '50px' }}>
-                    <BarChart
-                        xAxis={[{ scaleType: 'band', data: items.map(item => (item.name)) }]}
-                        series={[{ data: items.map(item => (item.name.length)) }]}
-                        width={500}
-                        height={300}
-                    />
+                    
                 </div>
             </div>
             </div>
